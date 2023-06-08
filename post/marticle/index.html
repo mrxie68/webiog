@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="zh-cn"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>常用的 Hugo 命令 - 🧠Brain hole</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="常用的 Hugo 命令 Hugo：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。
+hugo new post/my-article.md //创建一个新的文章，指定文章路径、名称和文件扩展名。 hugo server //启动 Hugo 的开发服务器，用于在本地预览网站。 hugo server -D //启动开发服务器，并包括草稿（draft）文章在内。 hugo //生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。 hugo -D //生成静态网站文件，包括草稿（draft）文章在内。 hugo --gc //生成静态网站文件之前清除缓存。 hugo --minify //生成压缩版本的静态网站文件，以减小文件大小。 hugo deploy //将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。 首次推送
+git init git add . //初始化 Git 仓库并将生成的静态文件添加到仓库中 git commit -m &#34;Initial commit&#34; //提交你的更改 git remote add origin &lt;your-github-repo&gt; //关联本地仓库与 GitHub 仓库。 git push -u origin master //推送本地仓库到 GitHub 仓库 二次推送" />
+  <meta name="author" content="📝谢谢的·谢" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://web.0412.cyou/main.min.css" />
+
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://web.0412.cyou/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://web.0412.cyou/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://web.0412.cyou/github.svg" />
+  
+  
+
+  
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://web.0412.cyou/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://web.0412.cyou/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.113.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="常用的 Hugo 命令" />
+<meta property="og:description" content="常用的 Hugo 命令 Hugo：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。
+hugo new post/my-article.md //创建一个新的文章，指定文章路径、名称和文件扩展名。 hugo server //启动 Hugo 的开发服务器，用于在本地预览网站。 hugo server -D //启动开发服务器，并包括草稿（draft）文章在内。 hugo //生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。 hugo -D //生成静态网站文件，包括草稿（draft）文章在内。 hugo --gc //生成静态网站文件之前清除缓存。 hugo --minify //生成压缩版本的静态网站文件，以减小文件大小。 hugo deploy //将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。 首次推送
+git init git add . //初始化 Git 仓库并将生成的静态文件添加到仓库中 git commit -m &#34;Initial commit&#34; //提交你的更改 git remote add origin &lt;your-github-repo&gt; //关联本地仓库与 GitHub 仓库。 git push -u origin master //推送本地仓库到 GitHub 仓库 二次推送" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://web.0412.cyou/post/marticle/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-05T14:33:00+08:00" />
+<meta property="article:modified_time" content="2023-06-05T14:33:00+08:00" />
+
+  
+  <meta itemprop="name" content="常用的 Hugo 命令">
+<meta itemprop="description" content="常用的 Hugo 命令 Hugo：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。
+hugo new post/my-article.md //创建一个新的文章，指定文章路径、名称和文件扩展名。 hugo server //启动 Hugo 的开发服务器，用于在本地预览网站。 hugo server -D //启动开发服务器，并包括草稿（draft）文章在内。 hugo //生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。 hugo -D //生成静态网站文件，包括草稿（draft）文章在内。 hugo --gc //生成静态网站文件之前清除缓存。 hugo --minify //生成压缩版本的静态网站文件，以减小文件大小。 hugo deploy //将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。 首次推送
+git init git add . //初始化 Git 仓库并将生成的静态文件添加到仓库中 git commit -m &#34;Initial commit&#34; //提交你的更改 git remote add origin &lt;your-github-repo&gt; //关联本地仓库与 GitHub 仓库。 git push -u origin master //推送本地仓库到 GitHub 仓库 二次推送"><meta itemprop="datePublished" content="2023-06-05T14:33:00+08:00" />
+<meta itemprop="dateModified" content="2023-06-05T14:33:00+08:00" />
+<meta itemprop="wordCount" content="88">
+<meta itemprop="keywords" content="博客," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="常用的 Hugo 命令"/>
+<meta name="twitter:description" content="常用的 Hugo 命令 Hugo：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。
+hugo new post/my-article.md //创建一个新的文章，指定文章路径、名称和文件扩展名。 hugo server //启动 Hugo 的开发服务器，用于在本地预览网站。 hugo server -D //启动开发服务器，并包括草稿（draft）文章在内。 hugo //生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。 hugo -D //生成静态网站文件，包括草稿（draft）文章在内。 hugo --gc //生成静态网站文件之前清除缓存。 hugo --minify //生成压缩版本的静态网站文件，以减小文件大小。 hugo deploy //将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。 首次推送
+git init git add . //初始化 Git 仓库并将生成的静态文件添加到仓库中 git commit -m &#34;Initial commit&#34; //提交你的更改 git remote add origin &lt;your-github-repo&gt; //关联本地仓库与 GitHub 仓库。 git push -u origin master //推送本地仓库到 GitHub 仓库 二次推送"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://web.0412.cyou/"
+      >🧠Brain hole</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/space/"
+        >Space</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/YOUR_TWITTER_ID"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/YOUR_GITHUB_ID"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pb-24 pt-16 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">常用的 Hugo 命令</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>2023年6月5日 14:33</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>📝谢谢的·谢</span>
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="常用的-hugo-命令">常用的 Hugo 命令</h2>
+<p><strong>Hugo</strong>：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">post</span><span style="color:#f92672">/</span><span style="color:#a6e22e">my</span><span style="color:#f92672">-</span><span style="color:#a6e22e">article</span>.<span style="color:#a6e22e">md</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//创建一个新的文章，指定文章路径、名称和文件扩展名。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">server</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//启动 Hugo 的开发服务器，用于在本地预览网站。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">D</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//启动开发服务器，并包括草稿（draft）文章在内。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">D</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//生成静态网站文件，包括草稿（draft）文章在内。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">gc</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//生成静态网站文件之前清除缓存。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">minify</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//生成压缩版本的静态网站文件，以减小文件大小。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">deploy</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。
+</span></span></span></code></pre></div><p><strong>首次推送</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">init</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">add</span> .
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//初始化 Git 仓库并将生成的静态文件添加到仓库中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">commit</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">m</span> <span style="color:#e6db74">&#34;Initial commit&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//提交你的更改
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">remote</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">origin</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">your</span><span style="color:#f92672">-</span><span style="color:#a6e22e">github</span><span style="color:#f92672">-</span><span style="color:#a6e22e">repo</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//关联本地仓库与 GitHub 仓库。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">u</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">master</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//推送本地仓库到 GitHub 仓库
+</span></span></span></code></pre></div><p><strong>二次推送</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">add</span> .
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//添加所有修改或更新的文件到 Git 仓库
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">commit</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">m</span> <span style="color:#e6db74">&#34;Update&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//提交你的更改
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">master</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//推送你的更改到 GitHub 仓库
+</span></span></span></code></pre></div></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2"
+      >博客</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://web.0412.cyou/post/first/"
+      ><span class="mr-1.5">←</span><span>致那个即将要被淡忘的年代—我的爷爷</span></a
+    >
+    
+    
+  </nav>
+  
+
+
+  <br>
+  <div id="tcomment"></div>
+  <script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+  <script>
+    twikoo.init({
+      envId: 'https://ming.zeabur.app/', 
+      el: '#tcomment', 
+      
+      
+      
+    });
+  </script>
+
+  
+  
+
+
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto1">Powered by 脑洞有洞
+    &copy; 2023
+    <a class="link" href="https://web.0412.cyou">🧠Brain hole Theme Paper</a>
+  </div>️
+</footer>
+
+  </body>
+</html>

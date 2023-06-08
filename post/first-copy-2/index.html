@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="zh-cn"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>测试主题 - 🧠Brain hole</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="欢迎使用 Arya 在线 Markdown 编辑器 $$ 水水水水水水水 $$ Arya，是一款基于 Vue、Vditor，为未来而构建的在线 Markdown 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。
+如何使用 微注：清空目前这份默认文档，即处于可使用态。Arya 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，绝不窥测用户个人隐私，可放心使用；Github 源码：markdown-online-editor，部分功能仍在开发🚧，敬请期待。
+默认为所见即所得模式，可通过 ⌘-⇧-M（Ctrl-⇧-M）进行切换；或通过以下方式：
+所见即所得：⌘-⌥-7（Ctrl-alt-7）； 即时渲染：⌘-⌥-8（Ctrl-alt-8）； 分屏渲染：⌘-⌥-9（Ctrl-alt-9）； PPT 预览 如果您用作 PPT 预览（入口在设置中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 --- 来定义水平方向上幻灯片，用 -- 来定义垂直幻灯片；更多设定可以参见 RevealJs 文档。
+什么是 Markdown Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，粗体、斜体 或者超文本链接，更棒的是，它还可以：
+1. 制作待办事宜 Todo 列表 🎉 通常 Markdown 解析器自带的基本功能； 🍀 支持流程图、甘特图、时序图、任务列表； 🏁 支持粘贴 HTML 自动转换为 Markdown； 💃🏻 支持插入原生 Emoji、设置常用表情列表； 🚑 支持编辑内容保存本地存储，防止意外丢失； 📝 支持实时预览，主窗口大小拖拽，字符计数； 🛠 支持常用快捷键(Tab)，及代码块添加复制 ✨ 支持导出携带样式的 PDF、PNG、JPEG 等； ✨ 升级 Vditor，新增对 echarts 图表的支持； 👏 支持检查并格式化 Markdown 语法，使其专业； 🦑 支持五线谱、及部分站点、视频、音频解析； 🌟 增加对所见即所得编辑模式的支持(⌘-⇧-M)； 2." />
+  <meta name="author" content="脑洞有洞" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://mrxie68.github.io/webiog/main.min.css" />
+
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://mrxie68.github.io/webiog/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://mrxie68.github.io/webiog/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://mrxie68.github.io/webiog/github.svg" />
+  
+  
+
+  
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://mrxie68.github.io/webiog/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://mrxie68.github.io/webiog/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.113.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="测试主题" />
+<meta property="og:description" content="欢迎使用 Arya 在线 Markdown 编辑器 $$ 水水水水水水水 $$ Arya，是一款基于 Vue、Vditor，为未来而构建的在线 Markdown 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。
+如何使用 微注：清空目前这份默认文档，即处于可使用态。Arya 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，绝不窥测用户个人隐私，可放心使用；Github 源码：markdown-online-editor，部分功能仍在开发🚧，敬请期待。
+默认为所见即所得模式，可通过 ⌘-⇧-M（Ctrl-⇧-M）进行切换；或通过以下方式：
+所见即所得：⌘-⌥-7（Ctrl-alt-7）； 即时渲染：⌘-⌥-8（Ctrl-alt-8）； 分屏渲染：⌘-⌥-9（Ctrl-alt-9）； PPT 预览 如果您用作 PPT 预览（入口在设置中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 --- 来定义水平方向上幻灯片，用 -- 来定义垂直幻灯片；更多设定可以参见 RevealJs 文档。
+什么是 Markdown Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，粗体、斜体 或者超文本链接，更棒的是，它还可以：
+1. 制作待办事宜 Todo 列表 🎉 通常 Markdown 解析器自带的基本功能； 🍀 支持流程图、甘特图、时序图、任务列表； 🏁 支持粘贴 HTML 自动转换为 Markdown； 💃🏻 支持插入原生 Emoji、设置常用表情列表； 🚑 支持编辑内容保存本地存储，防止意外丢失； 📝 支持实时预览，主窗口大小拖拽，字符计数； 🛠 支持常用快捷键(Tab)，及代码块添加复制 ✨ 支持导出携带样式的 PDF、PNG、JPEG 等； ✨ 升级 Vditor，新增对 echarts 图表的支持； 👏 支持检查并格式化 Markdown 语法，使其专业； 🦑 支持五线谱、及部分站点、视频、音频解析； 🌟 增加对所见即所得编辑模式的支持(⌘-⇧-M)； 2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mrxie68.github.io/webiog/post/first-copy-2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-08T14:33:00+08:00" />
+<meta property="article:modified_time" content="2023-06-08T14:33:00+08:00" />
+
+  
+  <meta itemprop="name" content="测试主题">
+<meta itemprop="description" content="欢迎使用 Arya 在线 Markdown 编辑器 $$ 水水水水水水水 $$ Arya，是一款基于 Vue、Vditor，为未来而构建的在线 Markdown 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。
+如何使用 微注：清空目前这份默认文档，即处于可使用态。Arya 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，绝不窥测用户个人隐私，可放心使用；Github 源码：markdown-online-editor，部分功能仍在开发🚧，敬请期待。
+默认为所见即所得模式，可通过 ⌘-⇧-M（Ctrl-⇧-M）进行切换；或通过以下方式：
+所见即所得：⌘-⌥-7（Ctrl-alt-7）； 即时渲染：⌘-⌥-8（Ctrl-alt-8）； 分屏渲染：⌘-⌥-9（Ctrl-alt-9）； PPT 预览 如果您用作 PPT 预览（入口在设置中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 --- 来定义水平方向上幻灯片，用 -- 来定义垂直幻灯片；更多设定可以参见 RevealJs 文档。
+什么是 Markdown Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，粗体、斜体 或者超文本链接，更棒的是，它还可以：
+1. 制作待办事宜 Todo 列表 🎉 通常 Markdown 解析器自带的基本功能； 🍀 支持流程图、甘特图、时序图、任务列表； 🏁 支持粘贴 HTML 自动转换为 Markdown； 💃🏻 支持插入原生 Emoji、设置常用表情列表； 🚑 支持编辑内容保存本地存储，防止意外丢失； 📝 支持实时预览，主窗口大小拖拽，字符计数； 🛠 支持常用快捷键(Tab)，及代码块添加复制 ✨ 支持导出携带样式的 PDF、PNG、JPEG 等； ✨ 升级 Vditor，新增对 echarts 图表的支持； 👏 支持检查并格式化 Markdown 语法，使其专业； 🦑 支持五线谱、及部分站点、视频、音频解析； 🌟 增加对所见即所得编辑模式的支持(⌘-⇧-M)； 2."><meta itemprop="datePublished" content="2023-06-08T14:33:00+08:00" />
+<meta itemprop="dateModified" content="2023-06-08T14:33:00+08:00" />
+<meta itemprop="wordCount" content="369">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试主题"/>
+<meta name="twitter:description" content="欢迎使用 Arya 在线 Markdown 编辑器 $$ 水水水水水水水 $$ Arya，是一款基于 Vue、Vditor，为未来而构建的在线 Markdown 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。
+如何使用 微注：清空目前这份默认文档，即处于可使用态。Arya 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，绝不窥测用户个人隐私，可放心使用；Github 源码：markdown-online-editor，部分功能仍在开发🚧，敬请期待。
+默认为所见即所得模式，可通过 ⌘-⇧-M（Ctrl-⇧-M）进行切换；或通过以下方式：
+所见即所得：⌘-⌥-7（Ctrl-alt-7）； 即时渲染：⌘-⌥-8（Ctrl-alt-8）； 分屏渲染：⌘-⌥-9（Ctrl-alt-9）； PPT 预览 如果您用作 PPT 预览（入口在设置中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 --- 来定义水平方向上幻灯片，用 -- 来定义垂直幻灯片；更多设定可以参见 RevealJs 文档。
+什么是 Markdown Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，粗体、斜体 或者超文本链接，更棒的是，它还可以：
+1. 制作待办事宜 Todo 列表 🎉 通常 Markdown 解析器自带的基本功能； 🍀 支持流程图、甘特图、时序图、任务列表； 🏁 支持粘贴 HTML 自动转换为 Markdown； 💃🏻 支持插入原生 Emoji、设置常用表情列表； 🚑 支持编辑内容保存本地存储，防止意外丢失； 📝 支持实时预览，主窗口大小拖拽，字符计数； 🛠 支持常用快捷键(Tab)，及代码块添加复制 ✨ 支持导出携带样式的 PDF、PNG、JPEG 等； ✨ 升级 Vditor，新增对 echarts 图表的支持； 👏 支持检查并格式化 Markdown 语法，使其专业； 🦑 支持五线谱、及部分站点、视频、音频解析； 🌟 增加对所见即所得编辑模式的支持(⌘-⇧-M)； 2."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://mrxie68.github.io/"
+      >🧠Brain hole</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/webiog/"
+        >Home</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/webiog/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/webiog/space/"
+        >Space</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/YOUR_TWITTER_ID"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/YOUR_GITHUB_ID"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pb-24 pt-16 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">测试主题</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>2023年6月8日 14:33</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="欢迎使用-arya-在线-markdown-编辑器">欢迎使用 <code>Arya</code> 在线 Markdown 编辑器</h1>
+<p>$$
+水水水水水水水
+$$
+<a href="https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn">Arya</a>，是一款基于 <code>Vue</code>、<code>Vditor</code>，为未来而构建的在线 Markdown 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。</p>
+<hr>
+<h2 id="如何使用">如何使用</h2>
+<p><strong>微注</strong>：清空目前这份默认文档，即处于可使用态。<a href="https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn">Arya</a> 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，<strong>绝不窥测用户个人隐私，可放心使用</strong>；Github 源码：<a href="https://github.com/nicejade/markdown-online-editor">markdown-online-editor</a>，部分功能仍在开发🚧，敬请期待。</p>
+<p>默认为<a href="https://hacpai.com/article/1577370404903?utm_source=github.com">所见即所得</a>模式，可通过 <code>⌘-⇧-M</code>（<code>Ctrl-⇧-M</code>）进行切换；或通过以下方式：</p>
+<ul>
+<li>所见即所得：<code>⌘-⌥-7</code>（<code>Ctrl-alt-7</code>）；</li>
+<li>即时渲染：<code>⌘-⌥-8</code>（<code>Ctrl-alt-8</code>）；</li>
+<li>分屏渲染：<code>⌘-⌥-9</code>（<code>Ctrl-alt-9</code>）；</li>
+</ul>
+<h3 id="ppt-预览">PPT 预览</h3>
+<p>如果您用作 <code>PPT</code> 预览（入口在<code>设置</code>中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 <code>---</code> 来定义水平方向上幻灯片，用 <code>--</code> 来定义垂直幻灯片；更多设定可以参见 <a href="https://github.com/hakimel/reveal.js#table-of-contents">RevealJs 文档</a>。</p>
+<hr>
+<h2 id="什么是-markdown">什么是 Markdown</h2>
+<p><a href="https://nicelinks.site/tags/Markdown/?utm_source=markdown.lovejade.cn">Markdown</a> 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong>、<em>斜体</em> 或者<a href="https://vue-cli3.lovejade.cn/explore/">超文本链接</a>，更棒的是，它还可以：</p>
+<hr>
+<h3 id="1-制作待办事宜-todo-列表">1. 制作待办事宜 <code>Todo</code> 列表</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 🎉 通常 <code>Markdown</code> 解析器自带的基本功能；</li>
+<li><input checked="" disabled="" type="checkbox"> 🍀 支持<strong>流程图</strong>、<strong>甘特图</strong>、<strong>时序图</strong>、<strong>任务列表</strong>；</li>
+<li><input checked="" disabled="" type="checkbox"> 🏁 支持粘贴 HTML 自动转换为 Markdown；</li>
+<li><input checked="" disabled="" type="checkbox"> 💃🏻 支持插入原生 Emoji、设置常用表情列表；</li>
+<li><input checked="" disabled="" type="checkbox"> 🚑 支持编辑内容保存<strong>本地存储</strong>，防止意外丢失；</li>
+<li><input checked="" disabled="" type="checkbox"> 📝 支持<strong>实时预览</strong>，主窗口大小拖拽，字符计数；</li>
+<li><input checked="" disabled="" type="checkbox"> 🛠 支持常用快捷键(<strong>Tab</strong>)，及代码块添加复制</li>
+<li><input checked="" disabled="" type="checkbox"> ✨ 支持<strong>导出</strong>携带样式的 PDF、PNG、JPEG 等；</li>
+<li><input checked="" disabled="" type="checkbox"> ✨ 升级 Vditor，新增对 <code>echarts</code> 图表的支持；</li>
+<li><input checked="" disabled="" type="checkbox"> 👏 支持检查并格式化 Markdown 语法，使其专业；</li>
+<li><input checked="" disabled="" type="checkbox"> 🦑 支持五线谱、及<a href="https://github.com/b3log/vditor/issues/117?utm_source=hacpai.com#issuecomment-526986052">部分站点、视频、音频解析</a>；</li>
+<li><input checked="" disabled="" type="checkbox"> 🌟 增加对<strong>所见即所得</strong>编辑模式的支持(<code>⌘-⇧-M</code>)；</li>
+</ul>
+<hr>
+<h3 id="2-书写一个质能守恒公式latex">2. 书写一个质能守恒公式[^LaTeX]</h3>
+<p>$$
+E=mc^2
+$$</p>
+<hr>
+<h3 id="3-高亮一段代码code">3. 高亮一段代码[^code]</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// 给页面里所有的 DOM 元素添加一个 1px 的描边（outline）;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[].<span style="color:#a6e22e">forEach</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">$$</span>(<span style="color:#e6db74">&#34;*&#34;</span>),<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">a</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">outline</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1px solid #&#34;</span><span style="color:#f92672">+</span>(<span style="color:#f92672">~~</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">24</span>))).<span style="color:#a6e22e">toString</span>(<span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h3 id="4-高效绘制流程图httpsgithubcomknsvmermaidflowchart">4. 高效绘制<a href="https://github.com/knsv/mermaid#flowchart">流程图</a></h3>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD;
+  A--&gt;B;
+  A--&gt;C;
+  B--&gt;D;
+  C--&gt;D;
+</code></pre><h3 id="5-高效绘制序列图httpsgithubcomknsvmermaidsequence-diagram">5. 高效绘制<a href="https://github.com/knsv/mermaid#sequence-diagram">序列图</a></h3>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &lt;br/&gt;prevail...
+  John--&gt;Alice: Great!
+  John-&gt;Bob: How about you?
+  Bob--&gt;John: Jolly good!
+</code></pre><h3 id="6-高效绘制甘特图httpsgithubcomknsvmermaidgantt-diagram">6. 高效绘制<a href="https://github.com/knsv/mermaid#gantt-diagram">甘特图</a></h3>
+<blockquote>
+<p><strong>甘特图</strong>内在思想简单。基本是一条线条图，横轴表示时间，纵轴表示活动（项目），线条表示在整个期间上计划和实际的活动完成情况。它直观地表明任务计划在什么时候进行，及实际进展与计划要求的对比。</p>
+</blockquote>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">gantt
+  title 项目开发流程
+  section 项目确定
+    需求分析       :a1, 2019-06-22, 3d
+    可行性报告     :after a1, 5d
+    概念验证       : 5d
+  section 项目实施
+    概要设计      :2019-07-05  , 5d
+    详细设计      :2019-07-08, 10d
+    编码          :2019-07-15, 10d
+    测试          :2019-07-22, 5d
+  section 发布验收
+    发布: 2d
+    验收: 3d
+</code></pre><h3 id="7-支持图表">7. 支持图表</h3>
+<pre tabindex="0"><code class="language-echarts" data-lang="echarts">{
+  &#34;backgroundColor&#34;: &#34;#212121&#34;,
+  &#34;title&#34;: {
+    &#34;text&#34;: &#34;「晚晴幽草轩」访问来源&#34;,
+    &#34;subtext&#34;: &#34;2019 年 6 月份&#34;,
+    &#34;x&#34;: &#34;center&#34;,
+    &#34;textStyle&#34;: {
+      &#34;color&#34;: &#34;#f2f2f2&#34;
+    }
+  },
+  &#34;tooltip&#34;: {
+    &#34;trigger&#34;: &#34;item&#34;,
+    &#34;formatter&#34;: &#34;{a} &lt;br/&gt;{b} : {c} ({d}%)&#34;
+  },
+  &#34;legend&#34;: {
+    &#34;orient&#34;: &#34;vertical&#34;,
+    &#34;left&#34;: &#34;left&#34;,
+    &#34;data&#34;: [
+      &#34;搜索引擎&#34;,
+      &#34;直接访问&#34;,
+      &#34;推荐&#34;,
+      &#34;其他&#34;,
+      &#34;社交平台&#34;
+    ],
+    &#34;textStyle&#34;: {
+      &#34;color&#34;: &#34;#f2f2f2&#34;
+    }
+  },
+  &#34;series&#34;: [
+    {
+      &#34;name&#34;: &#34;访问来源&#34;,
+      &#34;type&#34;: &#34;pie&#34;,
+      &#34;radius&#34;: &#34;55%&#34;,
+      &#34;center&#34;: [
+        &#34;50%&#34;,
+        &#34;60%&#34;
+      ],
+      &#34;data&#34;: [
+        {
+          &#34;value&#34;: 10440,
+          &#34;name&#34;: &#34;搜索引擎&#34;,
+          &#34;itemStyle&#34;: {
+            &#34;color&#34;: &#34;#ef4136&#34;
+          }
+        },
+        {
+          &#34;value&#34;: 4770,
+          &#34;name&#34;: &#34;直接访问&#34;
+        },
+        {
+          &#34;value&#34;: 2430,
+          &#34;name&#34;: &#34;推荐&#34;
+        },
+        {
+          &#34;value&#34;: 342,
+          &#34;name&#34;: &#34;其他&#34;
+        },
+        {
+          &#34;value&#34;: 18,
+          &#34;name&#34;: &#34;社交平台&#34;
+        }
+      ],
+      &#34;itemStyle&#34;: {
+        &#34;emphasis&#34;: {
+          &#34;shadowBlur&#34;: 10,
+          &#34;shadowOffsetX&#34;: 0,
+          &#34;shadowColor&#34;: &#34;rgba(0, 0, 0, 0.5)&#34;
+        }
+      }
+    }
+  ]
+}
+</code></pre><blockquote>
+<p><strong>备注</strong>：上述 echarts 图表📈，其数据，须使用严格的 <strong>JSON</strong> 格式；您可使用 JSON.stringify(data)，将对象传换从而得标准数据，即可正常使用。</p>
+</blockquote>
+<h3 id="8-绘制表格">8. 绘制表格</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">作品名称</th>
+<th style="text-align:left">在线地址</th>
+<th style="text-align:center">上线日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">倾城之链</td>
+<td style="text-align:left"><a href="https://nicelinks.site/??utm_source=markdown.lovejade.cn">https://nicelinks.site</a></td>
+<td style="text-align:center">2017-09-20</td>
+</tr>
+<tr>
+<td style="text-align:left">晚晴幽草轩</td>
+<td style="text-align:left"><a href="https://jeffjade.com/??utm_source=markdown.lovejade.cn">https://jeffjade.com</a></td>
+<td style="text-align:center">2014-09-20</td>
+</tr>
+<tr>
+<td style="text-align:left">静轩之别苑</td>
+<td style="text-align:left"><a href="http://quickapp.lovejade.cn/??utm_source=markdown.lovejade.cn">http://quickapp.lovejade.cn</a></td>
+<td style="text-align:center">2019-01-12</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-更详细语法说明">9. 更详细语法说明</h3>
+<p>想要查看更详细的语法说明，可以参考这份 <a href="https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/markdown-tutorial.md">Markdown 资源列表</a>，涵盖入门至进阶教程，以及资源、平台等信息，能让您对她有更深的认知。</p>
+<p>总而言之，不同于其它<em>所见即所得</em>的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 <code>GitHub</code> 和 技术问答网站 <code>StackOverFlow</code> 的御用书写格式，而且越发流行，正在在向各行业渗透。</p>
+<p>最新更新于 2019.08.21
+{{ range $taxonomy, $terms := .Site.Taxonomies.categories }}</p>
+  <h2>{{ $taxonomy }}</h2>
+  <ul>
+    {{ range $name, $term := $terms }}
+      <li><a href="/categories/{{ $term | urlize }}">{{ $term }}</a></li>
+    {{ end }}
+  </ul>
+{{ end }}
+</section>
+
+  
+  
+
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://mrxie68.github.io/webiog/post/first/"
+      ><span>致那个即将要被淡忘的年代—我的爷爷</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto1">Powered by 脑洞有洞
+    &copy; 2023
+    <a class="link" href="https://mrxie68.github.io/webiog/">🧠Brain hole Theme Paper</a>
+  </div>️
+</footer>
+
+  </body>
+</html>
