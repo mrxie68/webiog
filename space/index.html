@@ -286,36 +286,38 @@
 <div id="issues"></div>
 <script>
 $(function() {
-  const url = "https://api.github.com/repos/mrxie68/kexue/issues?state=open&sort=created&direction=desc";
-  const repoUrl = url.replace("{OWNER}", "twbs").replace("{REPO}", "bootstrap");
-  const issuesElement = $("#issues");
-
-  fetch(repoUrl)
-    .then(response => response.json())
-    .then(issues => {
-      const issuesHtml = issues.map(issue => {
-        const user = issue.user.login;
-        const avatar = issue.user.avatar_url;
-        const date = new Date(issue.created_at).toLocaleString();
-        const title = issue.title;
-        const body = issue.body;
-        const link = issue.html_url;
-        const labels = issue.labels.map(label => {
-          return `<span class="label" style="padding: 3px 7px; margin: 5px;border-radius: 5px; background-color: #${label.color}">${label.name}</span>`;
-        }).join(" ");
-
-        return `
-        <div class="issue">
+    const apiUrl = "https://gitlab.com/api/v4/projects/{PROJECT_ID}/issues?state=opened&order_by=created_at&sort=desc";
+    const projectId = "46776273"; 
+    const url = apiUrl.replace("{PROJECT_ID}", projectId);
+    const issuesElement = $("#issues");
+  
+    fetch(url)
+      .then(response => response.json())
+      .then(issues => {
+        const issuesHtml = issues.map(issue => {
+          const user = issue.author.username;
+          const avatar = issue.author.avatar_url;
+          const date = new Date(issue.created_at).toLocaleString();
+          const title = issue.title;
+          const body = issue.description;
+          const link = issue.web_url;
+          const labels = issue.labels.map(label => {
+            return `<span class="label" style="padding: 3px 7px; margin: 5px;border-radius: 8px; background-color:#4d9feb">${label}</span>`;
+          }).join(" ");
+  
+          return `
+            <div class="issue">
               <div class="content">
                 <div class="headers">
                   <div class="avatar">
-                    <img src="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp">
+                  <img src="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp">
                   </div>
-                  <span class="user">Brain hole</span>
+                  <span class="user">脑洞有洞</span>
+                  
                   <span class="date1">${labels}</span>
                 </div>
                 <div class="title" style="word-wrap: break-word;display:none">
-                  <h3>${title}<h3>
+                  <h3>${title}</h3>
                 </div>
                 <div class="body11">
                   ${body}
@@ -325,15 +327,15 @@ $(function() {
                 </div> 
               </div>
             </div>
-        `;
-      }).join("");
-
-      issuesElement.html(issuesHtml);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-});
+          `;
+        }).join("");
+  
+        issuesElement.html(issuesHtml);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  });
 </script>
 
     </main>
