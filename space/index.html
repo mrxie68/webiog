@@ -282,60 +282,16 @@
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pb-24 pt-16 dark:prose-invert"
     >
       
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<div id="issues"></div>
+<div id="tcomment"></div>
+<script src="twikoo.all.min.js"></script>
 <script>
-$(function() {
-    const apiUrl = "https://gitlab.com/api/v4/projects/{PROJECT_ID}/issues?state=opened&order_by=created_at&sort=desc";
-    const projectId = "46776273"; 
-    const url = apiUrl.replace("{PROJECT_ID}", projectId);
-    const issuesElement = $("#issues");
+twikoo.init({
+  envId: 'https://ming.zeabur.app', 
+  el: '#tcomment', 
   
-    fetch(url)
-      .then(response => response.json())
-      .then(issues => {
-        const issuesHtml = issues.map(issue => {
-          const user = issue.author.username;
-          const avatar = issue.author.avatar_url;
-          const date = new Date(issue.created_at).toLocaleString();
-          const title = issue.title;
-          const body = issue.description;
-          const link = issue.web_url;
-          const labels = issue.labels.map(label => {
-            return `<span class="label" style="padding: 3px 7px; margin: 5px;border-radius: 8px; background-color:#4d9feb">${label}</span>`;
-          }).join(" ");
   
-          return `
-            <div class="issue">
-              <div class="content">
-                <div class="headers">
-                  <div class="avatar">
-                  <img src="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp">
-                  </div>
-                  <span class="user">脑洞有洞</span>
-                  
-                  <span class="date1">${labels}</span>
-                </div>
-                <div class="title" style="word-wrap: break-word;display:none">
-                  <h3>${title}</h3>
-                </div>
-                <div class="body11">
-                  ${body}
-                </div>
-                <div class="date1">
-                  <span class="date">${date}</span>
-                </div> 
-              </div>
-            </div>
-          `;
-        }).join("");
   
-        issuesElement.html(issuesHtml);
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  });
+})
 </script>
 
     </main>
