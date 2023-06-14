@@ -284,67 +284,17 @@
       
 <center><h1>Space</h1></center>
 
-<div id="loading"></div> 
 <div id="tcomment"></div>
-
+<script src="twikoo.all.min.js"></script>
 <script>
-
-function showLoading() {
-  var loadingElement = document.getElementById('loading');
-  loadingElement.style.display = 'block';
-}
-
-
-function hideLoading() {
-  var loadingElement = document.getElementById('loading');
-  loadingElement.style.display = 'none';
-}
-
-showLoading(); 
-
-window.addEventListener('load', function() {
-  hideLoading(); 
-
-  var script = document.createElement('script');
-  script.src = 'twikoo.all.min.js';
-  script.onload = function() {
-    twikoo.init({
-      envId: 'https://ming.zeabur.app', 
-      el: '#tcomment', 
-    });
-  };
-  document.head.appendChild(script);
-});
+  twikoo.init({
+    envId: 'https://ming.zeabur.app/', 
+    el: '#tcomment', 
+    
+    
+    
+  });
 </script>
-
-<style>
-#loading {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
-
- 
-#loading::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: 4px solid #ccc;
-  border-top-color: #333;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-</style>
 
 
     </main>
