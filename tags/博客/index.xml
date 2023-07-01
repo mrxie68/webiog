@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>博客 on 🧠Brain hole</title>
+    <title>博客 on Brain hole</title>
     <link>https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/</link>
-    <description>Recent content in 博客 on 🧠Brain hole</description>
+    <description>Recent content in 博客 on Brain hole</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 05 Jun 2023 14:33:00 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
@@ -13,9 +13,7 @@
       <pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate>
       
       <guid>https://web.0412.cyou/post/marticle/</guid>
-      <description>常用的 Hugo 命令 Hugo：是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。然而对于我这小白来说比hexo上手难得多。所以把一些常用命令记下来用。
-hugo new post/my-article.md //创建一个新的文章，指定文章路径、名称和文件扩展名。 hugo server //启动 Hugo 的开发服务器，用于在本地预览网站。 hugo server -D //启动开发服务器，并包括草稿（draft）文章在内。 hugo //生成静态网站文件。默认情况下，生成的文件将保存在 public 目录中。 hugo -D //生成静态网站文件，包括草稿（draft）文章在内。 hugo --gc //生成静态网站文件之前清除缓存。 hugo --minify //生成压缩版本的静态网站文件，以减小文件大小。 hugo deploy //将生成的网站文件部署到指定的部署目标，如 GitHub Pages、Netlify 等。 首次推送
-git init git add . //初始化 Git 仓库并将生成的静态文件添加到仓库中 git commit -m &amp;#34;Initial commit&amp;#34; //提交你的更改 git remote add origin &amp;lt;your-github-repo&amp;gt; //关联本地仓库与 GitHub 仓库。 git push -u origin master //推送本地仓库到 GitHub 仓库 二次推送</description>
+      <description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description>
     </item>
     
   </channel>
