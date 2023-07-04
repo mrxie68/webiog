@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>常用的 Hugo 命令</title>
+      <link>https://web.0412.cyou/post/marticle/</link>
+      <pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/marticle/</guid>
+      <description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description>
+    </item>
+    
+    <item>
       <title>关于</title>
       <link>https://web.0412.cyou/about/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
@@ -32,15 +41,6 @@
       
       <guid>https://web.0412.cyou/gallery/</guid>
       <description>这些照片不仅仅是图像，它们是我与亲朋好友、自然和文化的纽带。它们让我回忆起那些特殊的时刻，让我感受到生活的美好和多彩。每一次翻看这些照片，都</description>
-    </item>
-    
-    <item>
-      <title>常用的 Hugo 命令</title>
-      <link>https://web.0412.cyou/post/marticle/</link>
-      <pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate>
-      
-      <guid>https://web.0412.cyou/post/marticle/</guid>
-      <description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description>
     </item>
     
     <item>
