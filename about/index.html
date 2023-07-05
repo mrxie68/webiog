@@ -310,7 +310,7 @@
   <meta itemprop="name" content="关于">
 <meta itemprop="description" content="无论你是谁，无论你来自何方， 在这个小小的空间里，我们相聚在思想的海洋中。 让我们一起探索生活的意义， 追求真理、善良和美好。 ——Brain hole console.log(&#34;Hello! Welcome"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-06-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="233">
+<meta itemprop="wordCount" content="170">
 <meta itemprop="keywords" content="" />
   
   <meta name="twitter:card" content="summary"/>
@@ -497,11 +497,87 @@
   <span class="sm-text">——Brain hole</span>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hello! Welcome to the Brain hole!&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//如果您希望您个人的博客出现在下面的友链里面,可以按一下格式提交到&#39;admin@0412.cyou&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//博客名称：
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//博客地址：
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//博客头像：
-</span></span></span></code></pre></div><h3 id="致谢">致谢</h3>
+</span></span></code></pre></div>  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
+<!-- HTML -->
+<form id="blogForm">
+  <label for="blogName" style="padding: 8px;     padding-bottom: 15px;">博客名称：
+  <input type="text" id="blogName"  required></label>
+  <label for="blogUrl" style="padding: 8px;     padding-bottom: 15px;">博客地址：
+  <input type="url" id="blogUrl" required></label>
+  <label for="blogAvatar" style="padding-top: 8px; padding-bottom: 15px;">头像地址：
+  <input type="url" id="blogAvatar" required></label>
+  <button type="submit">提交</button>
+</form>
+<P>
+<div id="submittedData" style="
+    height: 40px;     overflow: hidden; /* 隐藏垂直滚动条 */
+"></div>
+<p id="submissionStatus"></p> <!-- 空白 <p> 元素用于输出提交状态 -->
+<script>
+    AV.init({
+      appId: "N83EGVZbfTsJl5YXmTEE5sIy-MdYXbMMI",
+      appKey: "wbxPx7t4vvRPYBhuhTFWOA6J",
+      serverURL: "https:\/\/n83egvzb.api.lncldglobal.com"
+    });
+  </script>
+
+
+
+<script>
+  const submittedDataElement = document.getElementById("submittedData");
+  const submissionStatusElement = document.getElementById("submissionStatus");
+
+  function displaySubmittedData(data) {
+    submittedDataElement.innerHTML = ""; // 清空已显示的数据
+    data.forEach(formData => {
+      const formDataElement = document.createElement("p");
+      formDataElement.textContent = `博客名称：${formData.name}，博客地址：${formData.url}`;
+      formDataElement.target = "_blank"; // 在新标签页中打开链接
+      submittedDataElement.appendChild(formDataElement);
+    });
+  }
+
+  function showSubmissionStatus(message, success = true) {
+    submissionStatusElement.textContent = message;
+    submissionStatusElement.style.color = success ? "green" : "red";
+  }
+
+  function fetchSubmittedData() {
+    const TestObject = AV.Object.extend('TestObject');
+    const query = new AV.Query(TestObject);
+    query.find().then(results => {
+      const data = results.map(result => result.toJSON());
+      displaySubmittedData(data);
+    }).catch(error => {
+      console.log('获取已提交数据失败：', error);
+    });
+  }
+
+  fetchSubmittedData(); // 初始加载时获取并显示已提交的数据
+
+  document.getElementById("blogForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const blogName = document.getElementById("blogName").value;
+    const blogUrl = document.getElementById("blogUrl").value;
+    const blogAvatar = document.getElementById("blogAvatar").value;
+    const TestObject = AV.Object.extend('TestObject');
+    const testObject = new TestObject();
+    testObject.set('name', blogName);
+    testObject.set('url', blogUrl);
+    testObject.save().then((object) => {
+      console.log('提交信息成功，请耐心等待更新。');
+      document.getElementById("blogName").value = "";
+      document.getElementById("blogUrl").value = "";
+      fetchSubmittedData(); // 提交后重新获取并显示已提交的数据
+      showSubmissionStatus("提交信息成功，请耐心等待更新。", true); // 输出成功消息
+    }).catch((error) => {
+      console.log('博客信息提交失败，请重试。', error);
+      showSubmissionStatus("博客信息提交失败，请重试。", false); // 输出失败消息
+    });
+  });
+
+</script>
+<h3 id="致谢">致谢</h3>
 <div class="container">
   <div class="box">
    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#FF4088" d="m71.2 8.5l36.7 21.3c4.3 2.5 7 7.2 7 12.2v43.7c0 5.6-3 10.7-7.8 13.4l-36.4 20.5c-4.8 2.7-10.7 2.7-15.5-.1l-33.5-19.3c-5.3-3-8.5-8.6-8.5-14.7V44.1c0-6.1 3.2-11.8 8.4-15L54.4 8.8c5.1-3.2 11.6-3.3 16.8-.3z"/><path fill="#C9177E" d="M63 126c-3.5 0-6.9-.9-10-2.7L19.5 104c-6.6-3.8-10.7-10.9-10.7-18.5V44.1c0-7.7 3.9-14.6 10.4-18.7L52.1 5.1c6.5-4 14.6-4.1 21.2-.3L110 26.1c5.7 3.3 9.2 9.4 9.2 15.9v43.7c0 7.1-3.8 13.7-10 17.2l-36.4 20.5c-3 1.7-6.4 2.6-9.8 2.6zm0-115.3c-2.2 0-4.4.6-6.3 1.8l-33 20.3c-4 2.4-6.3 6.7-6.3 11.3v41.5c0 4.5 2.4 8.7 6.3 11l33.5 19.3c3.5 2 7.8 2 11.3.1l36.4-20.5c3.5-2 5.6-5.6 5.6-9.6V42.1c0-3.5-1.9-6.7-4.9-8.5L69 12.3c-1.8-1.1-3.9-1.6-6-1.6z"/><path fill="#FFF" d="M38.6 96.9V30.5h13.9v24.2h23V30.5h13.9v66.4H75.5v-29h-23v29z"/></svg>
