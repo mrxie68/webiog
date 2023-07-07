@@ -506,33 +506,33 @@
   <input type="url" id="blogUrl" required></label>
   <label for="blogAvatar" style="padding-top: 8px; padding-bottom: 15px;">头像地址：
   <input type="url" id="blogAvatar" required></label>
-  <button type="submit">提交</button>
 </form>
+<div id="blogForm">
+ <button type="submit">提交</button></div>
 <P>
 <div id="submittedData" style="
     height: 40px;     overflow: hidden; /* 隐藏垂直滚动条 */
 "></div>
 <p id="submissionStatus"></p> <!-- 空白 <p> 元素用于输出提交状态 -->
 <script>
-    AV.init({
-      appId: "N83EGVZbfTsJl5YXmTEE5sIy-MdYXbMMI",
-      appKey: "wbxPx7t4vvRPYBhuhTFWOA6J",
-      serverURL: "https:\/\/n83egvzb.api.lncldglobal.com"
-    });
-  </script>
+  const appId = "N83EGVZbfTsJl5YXmTEE5sIy-MdYXbMMI";
+  const appKey = "wbxPx7t4vvRPYBhuhTFWOA6J";
+  const serverURL = "https:\/\/appi.0412.cyou";
 
+  AV.init({
+    appId: appId,
+    appKey: appKey,
+    serverURL: serverURL
+  });
 
-
-<script>
   const submittedDataElement = document.getElementById("submittedData");
   const submissionStatusElement = document.getElementById("submissionStatus");
-
   function displaySubmittedData(data) {
-    submittedDataElement.innerHTML = ""; // 清空已显示的数据
+    submittedDataElement.innerHTML = ""; 
     data.forEach(formData => {
       const formDataElement = document.createElement("p");
       formDataElement.textContent = `博客名称：${formData.name}，博客地址：${formData.url}`;
-      formDataElement.target = "_blank"; // 在新标签页中打开链接
+      formDataElement.target = "_blank"; 
       submittedDataElement.appendChild(formDataElement);
     });
   }
@@ -553,7 +553,7 @@
     });
   }
 
-  fetchSubmittedData(); // 初始加载时获取并显示已提交的数据
+  fetchSubmittedData(); 
 
   document.getElementById("blogForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -568,15 +568,15 @@
       console.log('提交信息成功，请耐心等待更新。');
       document.getElementById("blogName").value = "";
       document.getElementById("blogUrl").value = "";
-      fetchSubmittedData(); // 提交后重新获取并显示已提交的数据
-      showSubmissionStatus("提交信息成功，请耐心等待更新。", true); // 输出成功消息
+      fetchSubmittedData(); 
+      showSubmissionStatus("提交信息成功，请耐心等待更新。", true); 
     }).catch((error) => {
       console.log('博客信息提交失败，请重试。', error);
-      showSubmissionStatus("博客信息提交失败，请重试。", false); // 输出失败消息
+      showSubmissionStatus("博客信息提交失败，请重试。", false); 
     });
   });
-
 </script>
+
 <h3 id="致谢">致谢</h3>
 <div class="container">
   <div class="box">
@@ -599,6 +599,25 @@
     <div class="box1">Mr.xie</div>
     <button class="custom-button" onclick="window.open('https://www.0412.cyou/', '_blank');">&emsp;官 网&emsp;</button>
   </div>
+<!--
+<div class="box">
+  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><image xlink:href="path/to/your/image.svg" width="128" height="128" />
+</svg>
+  <div class="box1">HUGO</div>
+  <button class="custom-button" onclick="window.open('https://gohugo.io/', '_blank');">&emsp;官 网&emsp;</button>
+</div>
+
+<div class="box">
+  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><image xlink:href="path/to/your/image.svg" width="128" height="128" />
+</svg>
+  <div class="box1">HUGO</div>
+  <button class="custom-button" onclick="window.open('https://gohugo.io/', '_blank');">&emsp;官 网&emsp;</button>
+</div>
+
+
+
+
+-->
 </div>
 <h3 id="友链">友链</h3>
 <div class="box">
@@ -614,7 +633,7 @@
     justify-content: space-between;
   }
   .box {
-    width: 16%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
