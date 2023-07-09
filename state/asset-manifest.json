@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/state/css/main.e4003dc1.css",
+    "main.js": "/state/js/main.49fc65e4.js",
+    "main.e4003dc1.css.map": "/state/css/main.e4003dc1.css.map",
+    "main.49fc65e4.js.map": "/state/js/main.49fc65e4.js.map"
+  },
+  "entrypoints": [
+    "state/css/main.e4003dc1.css",
+    "state/js/main.49fc65e4.js"
+  ]
+}
