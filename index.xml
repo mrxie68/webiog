@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brain hole</title><link>https://web.0412.cyou/</link><description>Recent content on Brain hole</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 07 Jun 2023 15:19:42 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/index.xml" rel="self" type="application/rss+xml"/><item><title>那个将要被遗忘的年代—我与爷爷</title><link>https://web.0412.cyou/post/first/</link><pubDate>Wed, 07 Jun 2023 15:19:42 +0800</pubDate><guid>https://web.0412.cyou/post/first/</guid><description>时间如白驹过隙,一去不返。当我回首过去,那些充满笑声与阳光的日子仿佛还在昨天,却又似乎离我很远很远。前几日休息时去了姐姐家，看到了与爷爷一起的合影，记忆似乎已经开始模糊了。但爷爷的在照片形象中仍然充满慈祥。从小我就在爷爷的身边长大,对爷爷的感情颇深。</description></item><item><title>常用的 Hugo 命令</title><link>https://web.0412.cyou/post/marticle/</link><pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate><guid>https://web.0412.cyou/post/marticle/</guid><description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description></item><item><title>关于</title><link>https://web.0412.cyou/about/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/about/</guid><description>无论你是谁，无论你来自何方， 在这个小小的空间里，我们相聚在思想的海洋中。 让我们一起探索生活的意义， 追求真理、善良和美好。 ——Brain hole console.log(&amp;#34;Hello! Welcome</description></item><item><title>分享</title><link>https://web.0412.cyou/share/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/share/</guid><description/></item><item><title>相册</title><link>https://web.0412.cyou/gallery1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/gallery1/</guid><description>这些照片不仅仅是图像，它们是我与亲朋好友、自然和文化的纽带。它们让我回忆起那些特殊的时刻，让我感受到生活的美好和多彩。每一次翻看这些照片，都</description></item><item><title>相册</title><link>https://web.0412.cyou/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/gallery/</guid><description>这些照片不仅仅是图像，它们是我与亲朋好友、自然和文化的纽带。它们让我回忆起那些特殊的时刻，让我感受到生活的美好和多彩。每一次翻看这些照片，都</description></item><item><title>空间</title><link>https://web.0412.cyou/space/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/space/</guid><description>在这个独特的个人空间里，我将分享我的思考、感悟和梦想。每一行文字都是我内心的声音，每一个瞬间都是我生命的片段。欢迎来到我的世界，愿这里的每一</description></item><item><title>系统状态</title><link>https://web.0412.cyou/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://web.0412.cyou/state/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brain hole</title>
+    <link>https://web.0412.cyou/</link>
+    <description>Recent content on Brain hole</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 07 Jun 2023 15:19:42 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>那个将要被遗忘的年代—我与爷爷</title>
+      <link>https://web.0412.cyou/post/first/</link>
+      <pubDate>Wed, 07 Jun 2023 15:19:42 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/first/</guid>
+      <description>时间如白驹过隙,一去不返。当我回首过去,那些充满笑声与阳光的日子仿佛还在昨天,却又似乎离我很远很远。前几日休息时去了姐姐家，看到了与爷爷一起的合影，记忆似乎已经开始模糊了。但爷爷的在照片形象中仍然充满慈祥。从小我就在爷爷的身边长大,对爷爷的感情颇深。</description>
+    </item>
+    
+    <item>
+      <title>常用的 Hugo 命令</title>
+      <link>https://web.0412.cyou/post/marticle/</link>
+      <pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/marticle/</guid>
+      <description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://web.0412.cyou/about/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/about/</guid>
+      <description>无论你是谁，无论你来自何方， 在这个小小的空间里，我们相聚在思想的海洋中。 让我们一起探索生活的意义， 追求真理、善良和美好。 ——Brain hole console.log(&amp;#34;Hello! Welcome</description>
+    </item>
+    
+    <item>
+      <title>分享</title>
+      <link>https://web.0412.cyou/share/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/share/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>相册</title>
+      <link>https://web.0412.cyou/gallery1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/gallery1/</guid>
+      <description>这些照片不仅仅是图像，它们是我与亲朋好友、自然和文化的纽带。它们让我回忆起那些特殊的时刻，让我感受到生活的美好和多彩。每一次翻看这些照片，都</description>
+    </item>
+    
+    <item>
+      <title>相册</title>
+      <link>https://web.0412.cyou/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/gallery/</guid>
+      <description>这些照片不仅仅是图像，它们是我与亲朋好友、自然和文化的纽带。它们让我回忆起那些特殊的时刻，让我感受到生活的美好和多彩。每一次翻看这些照片，都</description>
+    </item>
+    
+    <item>
+      <title>空间</title>
+      <link>https://web.0412.cyou/space/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/space/</guid>
+      <description>在这个独特的个人空间里，我将分享我的思考、感悟和梦想。每一行文字都是我内心的声音，每一个瞬间都是我生命的片段。欢迎来到我的世界，愿这里的每一</description>
+    </item>
+    
+    <item>
+      <title>系统状态</title>
+      <link>https://web.0412.cyou/state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://web.0412.cyou/state/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

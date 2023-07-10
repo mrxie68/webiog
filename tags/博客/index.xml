@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客 on Brain hole</title><link>https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/</link><description>Recent content in 博客 on Brain hole</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 05 Jun 2023 14:33:00 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>常用的 Hugo 命令</title><link>https://web.0412.cyou/post/marticle/</link><pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate><guid>https://web.0412.cyou/post/marticle/</guid><description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on Brain hole</title>
+    <link>https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on Brain hole</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 05 Jun 2023 14:33:00 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常用的 Hugo 命令</title>
+      <link>https://web.0412.cyou/post/marticle/</link>
+      <pubDate>Mon, 05 Jun 2023 14:33:00 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/marticle/</guid>
+      <description>Hugo是一个流行的静态网站生成器，旨在帮助开发者快速构建高性能的网站。它是基于 Go 语言开发的，具有速度快、易于使用和灵活的特点。</description>
+    </item>
+    
+  </channel>
+</rss>

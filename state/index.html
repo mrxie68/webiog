@@ -1,12 +1,533 @@
-<!doctype html><html class="not-ready text-sm lg:text-base" style=--bg:#faf6f1 lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=viewport content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"><title>系统状态 - Brain hole</title><meta name=theme-color><meta name=description content><meta name=author content="脑洞有洞"><link rel="preload stylesheet" as=style href=https://web.0412.cyou/main.min.css><link rel=preload as=image href=https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp><link rel=preload as=image href=https://web.0412.cyou/twitter.svg><link rel=preload as=image href=https://web.0412.cyou/github.svg><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
-<link href=https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css rel=stylesheet type=text/css><link href=https://vjs.zencdn.net/8.3.0/video-js.css rel=stylesheet><link href=https://unpkg.com/@videojs/themes@1/dist/sea/index.css rel=stylesheet><script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
-<script type=text/javascript src=https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js></script>
-<script>document.addEventListener("DOMContentLoaded",initAplayer),window.aplayers=window.aplayers||[];function initAplayer(e){const t={loadResource:function(e,t,n){return new Promise(function(s,o){let a=document.head.querySelector("#"+e);if(a){s("success: "+t);return}const i=document.createElement(n);i.onload=i.onreadystatechange=()=>{!a&&(!i.readyState||/loaded|complete/.test(i.readyState))&&(i.onload=i.onreadystatechange=null,a=!0,s("success: "+t))},i.onerror=function(){o(Error(t+" load error!"))},n==="link"?(i.rel="stylesheet",i.href=t):i.src=t,i.id=e,document.getElementsByTagName("head")[0].appendChild(i)})},loadResources:function(e){const s=this.loadResource,t="//s0.pstatp.com/cdn/expire-1-M/",o="//gcore.jsdelivr.net/npm/",i=[t+"aplayer/1.10.1/APlayer.min.css",t+"aplayer/1.10.1/APlayer.min.js",o+"meting@2.0.1/dist/Meting.min.js"],n=[];i.forEach(e=>{n.push(s(btoa(e).replace(/[=+/]/g,""),e,{css:"link",js:"script"}[e.split(".").pop()]))}),Promise.all(n).then(function(){if(typeof e!="function")return;let t=!1;const n=setInterval(()=>{!t&&typeof APlayer=="function"&&typeof MetingJSElement=="function"&&(t=!0,e(),clearInterval(n))},100)})},createAplayers:function(e){for(let t=0;t<e.length;t++){const s=document.createElement("div");e[t].parentNode.insertBefore(s,e[t]),e[t].style.display="none";const a=e[t].querySelectorAll("s"),o=[];a.forEach(e=>{const t={};for(let n=0;n<e.attributes.length;n++)t[e.attributes[n].name]=e.attributes[n].value;o.push(t)});const i={container:s,preload:"none",autoplay:!1,audio:o},n=e[t].attributes;for(let e=0;e<n.length;e++)i[n[e].name]=n[e].value;this.loadResources(()=>window.aplayers.push(new APlayer(i)))}}};if(e=="manual")return new Promise((e)=>{t.loadResources(()=>e("success"))});const n=document.querySelectorAll("ap");n.length!==0&&t.createAplayers(n);const s=document.querySelectorAll("meting-js");!window.refreshing&&s.length!==0&&t.loadResources(function(){s.forEach(e=>{if(!e.aplayer){const t=e.outerHTML;e.aplayer={destroy:new Function,list:{index:void 0}},e.outerHTML=`
-`+t}}),document.querySelectorAll("meting-js").forEach(e=>{let t=!1;const n=setInterval(()=>{!t&&e.aplayer&&(t=!0,window.aplayers.push(e.aplayer),console.log("replaced unloaded aplayer."),clearInterval(n))},300)})})}</script><script>document.addEventListener("DOMContentLoaded",function(){let e=!1;window.needReloadUrls=window.needReloadUrls||new Set;const t=setInterval(()=>{!e&&jQuery&&(e=!0,$(document).on("pjax:start",function(){(!window.refreshing||!window.pjaxStarted)&&(window.pjaxStarted=!0,console.log("pjax:start"),window.aplayers.forEach(e=>{e.list.index=void 0,e.destroy()}),window.aplayers=[],setTimeout(()=>window.pjaxStarted=!1,2e3))}),$(document).on("pjax:end",function(){(document.querySelector("meting-js")||document.querySelector(".collapse-block")||document.querySelector("#toggle-menu-tree")||document.querySelectorAll(".content-tab-title").length>1)&&(window.needReloadUrls.has(location.href)||(window.needReloadUrls.add(location.href),console.log("captured a neededReloadUrl.")))}),$(document).on("pjax:popstate",function(e){e.state&&window.needReloadUrls.has(e.state.url)&&!window.refreshing&&(window.refreshing=!0,console.log("back-forward handler."),$.pjax.reload({url:location.href,container:"#body",fragment:"#body",scrollTo:!1,timeout:8e3}),setTimeout(()=>window.refreshing=!1,2e3))}),clearInterval(t))},500)})</script><link rel=icon href=https://web.0412.cyou/favicon.ico><link rel=apple-touch-icon href=https://web.0412.cyou/apple-touch-icon.png><meta name=generator content="Hugo 0.113.0"><meta property="og:title" content="系统状态"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="https://web.0412.cyou/state/"><meta property="article:section" content><meta itemprop=name content="系统状态"><meta itemprop=description content><meta itemprop=wordCount content="0"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="系统状态"><meta name=twitter:description content></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center"><div class="relative z-50 mr-auto flex items-center"><a class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" href=https://web.0412.cyou/>Brain hole</a></div><div class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6"><a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/>首页</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/gallery/>相册</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/space/>空间</a>
-<a class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a></nav><nav class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"><a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/YOUR_TWITTER_ID target=_blank rel=me>twitter</a>
-<a class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/YOUR_GITHUB_ID target=_blank rel=me>github</a></nav></div><div class="btn-dark text-[0]" role=button aria-label=Dark><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" style="margin-top:1.64rem;margin-left:1.3rem"><g stroke="currentcolor" stroke-linecap="round" stroke-width="2"><path fill="currentcolor" fill-opacity="0" stroke-dasharray="34" stroke-dashoffset="34" d="M12 7c2.76.0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5"><animate fill="freeze" attributeName="stroke-dashoffset" dur=".4s" values="34;0"/><animate fill="freeze" attributeName="fill-opacity" begin=".9s" dur=".15s" values="0;0.3"/></path><g fill="none" stroke-dasharray="2" stroke-dashoffset="2"><path d="M0 0"><animate fill="freeze" attributeName="d" begin=".5s" dur=".2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"/><animate fill="freeze" attributeName="stroke-dashoffset" begin=".5s" dur=".2s" values="2;0"/></path><path d="M0 0"><animate fill="freeze" attributeName="d" begin=".7s" dur=".2s" values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"/><animate fill="freeze" attributeName="stroke-dashoffset" begin=".7s" dur=".2s" values="2;0"/></path><animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></g></g></svg></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg=`"#faf6f1"`.replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script></header><main class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pb-24 pt-16 dark:prose-invert"><article><header class=mb-20><h1 class="!my-0 pb-2.5">系统状态</h1></div></header><section><head><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><script src=./config.js></script>
-<script defer src=/state/js/main.49fc65e4.js></script>
-<link href=/state/css/main.e4003dc1.css rel=stylesheet></head><div id=app></div></section><br></article></main><footer class="opaco mx-auto flex flex-col h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"><div class="flex flex-col justify-center items-center"><a href=/state/><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" style="margin-bottom:10px"><path fill="#45413c" d="M14.83 45.82a9.43 1.18.0 1018.86.0 9.43 1.18.0 10-18.86.0z" opacity=".15"/><path fill="#6dd627" d="M31.63 44.14a1.18 1.18.0 01-.93 1.49 9.9 9.9.0 01-2 .09 9.61 9.61.0 01-7.62-4.24c-4.14-6.52-.38-14.69-.22-15a1.18 1.18.0 012.14 1c0 .08-3.37 7.36.07 12.77a7.37 7.37.0 007.27 3.09 1.19 1.19.0 011.32.84z"/><path fill="#46b000" d="M23 27.44a18.47 18.47.0 00-1.48 7 13.94 13.94.0 00.15 2h-2.42a19.76 19.76.0 011.58-10 1.18 1.18.0 012.14 1z"/><path fill="none" stroke="#45413c" d="M23 27.44c0 .08-3.37 7.36.07 12.77a7.37 7.37.0 007.27 3.09 1.18 1.18.0 01.39 2.33 9.9 9.9.0 01-2 .09 9.61 9.61.0 01-7.62-4.24c-4.14-6.52-.38-14.69-.22-15a1.18 1.18.0 012.14 1z"/><path fill="#6dd627" d="M30.53 29.44a4.94 4.94.0 00-.72-2.3 4.91 4.91.0 001.71 1.71c3.65 2.16 7.77-2.2 5.72-5.91l-.88-1.58a.62.62.0 01.2-.81l1.51-1c3.55-2.33 1.93-8.1-2.31-7.89a4.9 4.9.0 00-2.31.72 4.91 4.91.0 001.71-1.71C37.32 7 33 2.91 29.26 5l-1.58.88a.62.62.0 01-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.83 4.83.0 00.72 2.3A5.08 5.08.0 0017 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58a.62.62.0 01-.21.81l-1.5 1c-3.55 2.33-1.93 8.1 2.31 7.89a4.94 4.94.0 002.3-.72 4.88 4.88.0 00-1.71 1.7c-2.16 3.66 2.19 7.78 5.91 5.73l1.58-.9a.62.62.0 01.81.2l1 1.51c2.35 3.59 8.09 1.97 7.88-2.27z"/><path fill="#9ceb60" d="M18.71 8.74A5.08 5.08.0 0017 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58c-1.37-5.73 5.12-8.11 7.84-3.6zm7.17-.97 1 1.51a.62.62.0 00.81.2l1.58-.88a4.41 4.41.0 016 1.86C37.14 6.87 32.9 3 29.26 5l-1.58.88a.62.62.0 01-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.85 4.85.0 00.4 1.67 4.39 4.39.0 017.48-.34zM10.45 20 12 19a.62.62.0 00.21-.81l-.88-1.58A5.78 5.78.0 0111 16l-.55.37a4.36 4.36.0 00-1.56 5.46A4.22 4.22.0 0110.45 20z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M30.53 29.44a4.94 4.94.0 00-.72-2.3 4.91 4.91.0 001.71 1.71c3.65 2.16 7.77-2.2 5.72-5.91l-.88-1.58a.62.62.0 01.2-.81l1.51-1c3.55-2.33 1.93-8.1-2.31-7.89a4.9 4.9.0 00-2.31.72 4.91 4.91.0 001.71-1.71C37.32 7 33 2.91 29.26 5l-1.58.88a.62.62.0 01-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.83 4.83.0 00.72 2.3A5.08 5.08.0 0017 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58a.62.62.0 01-.21.81l-1.5 1c-3.55 2.33-1.93 8.1 2.31 7.89a4.94 4.94.0 002.3-.72 4.88 4.88.0 00-1.71 1.7c-2.16 3.66 2.19 7.78 5.91 5.73l1.58-.9a.62.62.0 01.81.2l1 1.51c2.35 3.59 8.09 1.97 7.88-2.27zM18.71 8.74l2.69 4.46m5.72 9.48 2.69 4.46M29 15.08l4.45-2.69m-18.39 11.1 4.46-2.69"/></svg></a><div class=mb-2>Powered by &copy; 2023 <a class=link href=https://web.0412.cyou>Brain hole Theme Paper</a></div></div></footer></body></html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="zh-cn"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  
+
+  
+  <title>系统状态 - Brain hole</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="" />
+  <meta name="author" content="脑洞有洞" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://web.0412.cyou/main.min.css" />
+
+  
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://bu.dusays.com/2023/04/20/6440e7d78f79f.webp" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://web.0412.cyou/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://web.0412.cyou/github.svg" />
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js" defer></script>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', initAplayer);
+    window.aplayers = window.aplayers || [];
+    function initAplayer(option) {
+        const common = {
+            loadResource: function (id, resource, type) {
+                return new Promise(function (resolve, reject) {
+                    let loaded = document.head.querySelector('#' + id);
+                    if (loaded) {
+                        resolve('success: ' + resource);
+                        return;
+                    }
+                    const element = document.createElement(type);
+                    element.onload = element.onreadystatechange = () => {
+                        if (!loaded && (!element.readyState || /loaded|complete/.test(element.readyState))) {
+                            element.onload = element.onreadystatechange = null;
+                            loaded = true;
+                            resolve('success: ' + resource);
+                        }
+                    }
+                    element.onerror = function () {
+                        reject(Error(resource + ' load error!'));
+                    };
+                    if (type === 'link') {
+                        element.rel = 'stylesheet';
+                        element.href = resource;
+                    } else {
+                        element.src = resource;
+                    }
+                    element.id = id;
+                    document.getElementsByTagName('head')[0].appendChild(element);
+                });
+            },
+            loadResources: function (callback) {
+                const loadResource = this.loadResource;
+                const pt = '//s0.pstatp.com/cdn/expire-1-M/';
+                const jd = '//gcore.jsdelivr.net/npm/';
+                const resources = [
+                    pt + 'aplayer/1.10.1/APlayer.min.css',
+                    pt + 'aplayer/1.10.1/APlayer.min.js',
+                    jd + 'meting@2.0.1/dist/Meting.min.js'
+                ];
+                const loadPromises = [];
+                resources.forEach(resource => {
+                    loadPromises.push(loadResource(btoa(resource).replace(/[=+\/]/g, ''), resource,
+                        ({
+                            'css': 'link',
+                            'js': 'script'
+                        })[resource.split('.').pop()]
+                    ));
+                });
+                Promise.all(loadPromises).then(
+                    function () {
+                        if (typeof callback !== 'function') return;
+                        let flag = false;
+                        const waitAM = setInterval(() => {
+                            if (!flag
+                                && typeof APlayer === 'function'
+                                && typeof MetingJSElement === 'function') {
+                                flag = true;
+                                callback();
+                                clearInterval(waitAM);
+                            }
+                        }, 100);
+                    }
+                );
+            },
+            createAplayers: function (sources) {
+                for (let i = 0; i < sources.length; i++) {
+                    const child = document.createElement('div');
+                    sources[i].parentNode.insertBefore(child, sources[i]);
+                    sources[i].style.display = 'none';
+                    const songsTag = sources[i].querySelectorAll('s');
+                    const songs = [];
+                    songsTag.forEach(songTag => {
+                        const song = {};
+                        for (let i = 0; i < songTag.attributes.length; i++) {
+                            song[songTag.attributes[i].name] = songTag.attributes[i].value;
+                        }
+                        songs.push(song);
+                    });
+                    const options = { container: child, preload: 'none', autoplay: false, audio: songs };
+                    const optionMap = sources[i].attributes;
+                    for (let i = 0; i < optionMap.length; i++) {
+                        options[optionMap[i].name] = optionMap[i].value;
+                    }
+                    this.loadResources(() => window.aplayers.push(new APlayer(options)));
+                }
+            }
+        };
+
+        if (option == 'manual') return new Promise((resolve, reject) => {
+            common.loadResources(() => resolve('success'));
+        });
+
+        const aps = document.querySelectorAll('ap');
+        if (aps.length !== 0) common.createAplayers(aps);
+
+        const mts = document.querySelectorAll('meting-js');
+        if (!window.refreshing && mts.length !== 0) common.loadResources(
+            function () {
+                mts.forEach(mt => {
+                    if (!mt.aplayer) {
+                        const html = mt.outerHTML;
+                        mt.aplayer = { destroy: new Function(), list: { index: undefined } };
+                        mt.outerHTML = '\n' + html;
+                    }
+                });
+                document.querySelectorAll('meting-js').forEach(mt => {
+                    let flag = false;
+                    const waitMT = setInterval(() => {
+                        if (!flag && mt.aplayer) {
+                            flag = true;
+                            window.aplayers.push(mt.aplayer);
+                            console.log('replaced unloaded aplayer.')
+                            clearInterval(waitMT);
+                        }
+                    }, 300);
+                });
+            }
+        );
+    }
+</script>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        let flag = false;
+        window.needReloadUrls = window.needReloadUrls || new Set();
+        const jqueryWaitor = setInterval(() => {
+            if (!flag && jQuery) {
+                flag = true;
+                $(document).on('pjax:start', function () {
+                    if (!window.refreshing || !window.pjaxStarted) {
+                        window.pjaxStarted = true;
+                        console.log('pjax:start');
+                        window.aplayers.forEach(ap => {
+                            ap.list.index = undefined;
+                            ap.destroy();
+                        });
+                        window.aplayers = [];
+                        setTimeout(() => window.pjaxStarted = false, 2000);
+                    }
+                });
+                $(document).on('pjax:end', function () {
+                    if (document.querySelector('meting-js')
+                        || document.querySelector('.collapse-block')
+                        || document.querySelector('#toggle-menu-tree')
+                        || document.querySelectorAll('.content-tab-title').length > 1
+                    ) {
+                        if (!window.needReloadUrls.has(location.href)) {
+                            window.needReloadUrls.add(location.href);
+                            console.log('captured a neededReloadUrl.');
+                        }
+                    }
+                });
+                $(document).on('pjax:popstate', function (event) {
+                    if (event.state && window.needReloadUrls.has(event.state.url) && !window.refreshing) {
+                        window.refreshing = true;
+                        console.log('back-forward handler.');
+                        $.pjax.reload({
+                            url: location.href,
+                            container: '#body',
+                            fragment: '#body',
+                            scrollTo: false,
+                            timeout: 8000
+                        });
+                        setTimeout(() => window.refreshing = false, 2000);
+                    }
+                });
+                clearInterval(jqueryWaitor);
+            }
+        }, 500);
+    });
+</script>
+
+
+  
+  <link rel="icon" href="https://web.0412.cyou/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://web.0412.cyou/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.113.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="系统状态" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://web.0412.cyou/state/" /><meta property="article:section" content="" />
+
+
+
+  
+  <meta itemprop="name" content="系统状态">
+<meta itemprop="description" content="">
+
+<meta itemprop="wordCount" content="0">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="系统状态"/>
+<meta name="twitter:description" content=""/>
+
+  
+  
+
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://web.0412.cyou/"
+      >Brain hole</a
+    >
+
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >首页</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/gallery/"
+        >相册</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/space/"
+        >空间</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >关于</a
+      >
+      
+    </nav>
+    
+    
+
+    
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    > 
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/YOUR_TWITTER_ID"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/YOUR_GITHUB_ID"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+         
+    </nav>
+    
+  </div>
+
+<div
+  class="btn-dark text-[0] "
+  role="button"
+  aria-label="Dark"
+>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" style="margin-top: 1.64rem; margin-left: 1.3rem;"><g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="34" stroke-dashoffset="34" d="M12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="34;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.9s" dur="0.15s" values="0;0.3"/></path><g fill="none" stroke-dasharray="2" stroke-dashoffset="2"><path d="M0 0"><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="2;0"/></path><path d="M0 0"><animate fill="freeze" attributeName="d" begin="0.7s" dur="0.2s" values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="2;0"/></path><animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></g></g></svg> 
+</div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pb-24 pt-16 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">系统状态</h1>
+
+    
+
+
+
+      </div>
+      
+
+
+  </header>
+
+  <section><head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script src="./config.js"></script>
+    <script defer="defer" src="/state/js/main.49fc65e4.js"></script>
+    <link href="/state/css/main.e4003dc1.css" rel="stylesheet">
+</head>
+    <div id="app"></div>
+</section>
+
+  
+  
+
+  
+  
+  
+
+
+  <br>
+  
+
+  
+  
+
+
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer class="opaco mx-auto flex flex-col h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+  <div class="flex flex-col justify-center items-center">
+    <a href="/state/">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" style="margin-bottom: 10px;" ><path fill="#45413c" d="M14.83 45.82a9.43 1.18 0 1 0 18.86 0a9.43 1.18 0 1 0-18.86 0Z" opacity=".15"/><path fill="#6dd627" d="M31.63 44.14a1.18 1.18 0 0 1-.93 1.49a9.9 9.9 0 0 1-2 .09a9.61 9.61 0 0 1-7.62-4.24c-4.14-6.52-.38-14.69-.22-15a1.18 1.18 0 0 1 2.14 1c0 .08-3.37 7.36.07 12.77a7.37 7.37 0 0 0 7.27 3.09a1.19 1.19 0 0 1 1.32.84Z"/><path fill="#46b000" d="M23 27.44a18.47 18.47 0 0 0-1.48 7a13.94 13.94 0 0 0 .15 2h-2.42a19.76 19.76 0 0 1 1.58-10a1.18 1.18 0 0 1 2.14 1Z"/><path fill="none" stroke="#45413c" d="M23 27.44c0 .08-3.37 7.36.07 12.77a7.37 7.37 0 0 0 7.27 3.09a1.18 1.18 0 0 1 .39 2.33a9.9 9.9 0 0 1-2 .09a9.61 9.61 0 0 1-7.62-4.24c-4.14-6.52-.38-14.69-.22-15a1.18 1.18 0 0 1 2.14 1Z"/><path fill="#6dd627" d="M30.53 29.44a4.94 4.94 0 0 0-.72-2.3a4.91 4.91 0 0 0 1.71 1.71c3.65 2.16 7.77-2.2 5.72-5.91l-.88-1.58a.62.62 0 0 1 .2-.81l1.51-1c3.55-2.33 1.93-8.1-2.31-7.89a4.9 4.9 0 0 0-2.31.72a4.91 4.91 0 0 0 1.71-1.71C37.32 7 33 2.91 29.26 5l-1.58.88a.62.62 0 0 1-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.83 4.83 0 0 0 .72 2.3A5.08 5.08 0 0 0 17 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58a.62.62 0 0 1-.21.81l-1.5 1c-3.55 2.33-1.93 8.1 2.31 7.89a4.94 4.94 0 0 0 2.3-.72a4.88 4.88 0 0 0-1.71 1.7c-2.16 3.66 2.19 7.78 5.91 5.73l1.58-.9a.62.62 0 0 1 .81.2l1 1.51c2.35 3.59 8.09 1.97 7.88-2.27Z"/><path fill="#9ceb60" d="M18.71 8.74A5.08 5.08 0 0 0 17 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58c-1.37-5.73 5.12-8.11 7.84-3.6Zm7.17-.97l1 1.51a.62.62 0 0 0 .81.2l1.58-.88a4.41 4.41 0 0 1 6 1.86C37.14 6.87 32.9 3 29.26 5l-1.58.88a.62.62 0 0 1-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.85 4.85 0 0 0 .4 1.67a4.39 4.39 0 0 1 7.48-.34ZM10.45 20L12 19a.62.62 0 0 0 .21-.81l-.88-1.58A5.78 5.78 0 0 1 11 16l-.55.37a4.36 4.36 0 0 0-1.56 5.46A4.22 4.22 0 0 1 10.45 20Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M30.53 29.44a4.94 4.94 0 0 0-.72-2.3a4.91 4.91 0 0 0 1.71 1.71c3.65 2.16 7.77-2.2 5.72-5.91l-.88-1.58a.62.62 0 0 1 .2-.81l1.51-1c3.55-2.33 1.93-8.1-2.31-7.89a4.9 4.9 0 0 0-2.31.72a4.91 4.91 0 0 0 1.71-1.71C37.32 7 33 2.91 29.26 5l-1.58.88a.62.62 0 0 1-.81-.21l-1-1.5C23.55.58 17.78 2.2 18 6.44a4.83 4.83 0 0 0 .72 2.3A5.08 5.08 0 0 0 17 7c-3.65-2.16-7.77 2.2-5.72 5.91l.88 1.58a.62.62 0 0 1-.21.81l-1.5 1c-3.55 2.33-1.93 8.1 2.31 7.89a4.94 4.94 0 0 0 2.3-.72a4.88 4.88 0 0 0-1.71 1.7c-2.16 3.66 2.19 7.78 5.91 5.73l1.58-.9a.62.62 0 0 1 .81.2l1 1.51c2.35 3.59 8.09 1.97 7.88-2.27ZM18.71 8.74l2.69 4.46m5.72 9.48l2.69 4.46M29 15.08l4.45-2.69m-18.39 11.1l4.46-2.69"/></svg>
+
+
+
+
+
+    </a>
+    <div class="mb-2">
+      Powered by &copy; 2023 <a class="link" href="https://web.0412.cyou"> Brain hole Theme Paper</a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
