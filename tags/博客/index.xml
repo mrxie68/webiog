@@ -6,7 +6,16 @@
     <description>Recent content in 博客 on Brain hole</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Jun 2023 14:33:00 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 09:35:51 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brain hole是如何让建成的</title>
+      <link>https://web.0412.cyou/post/my-bokr/</link>
+      <pubDate>Thu, 13 Jul 2023 09:35:51 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/my-bokr/</guid>
+      <description>6月份初，我在twitter上看帖子的时候发现了hugo-paper，当时我觉得给我的感受是简约、漂亮。于是决定也搭建一个，经过在Google一番查找，发现paper使用的是hugo框架，开始用hugo的时候感觉要比hexo要难些。</description>
+    </item>
+    
     <item>
       <title>常用的 Hugo 命令</title>
       <link>https://web.0412.cyou/post/marticle/</link>

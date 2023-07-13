@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Brain hole</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 07 Jun 2023 15:19:42 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 09:35:51 +0800</lastBuildDate><atom:link href="https://web.0412.cyou/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>那个将要被遗忘的年代—我与爷爷</title>
       <link>https://web.0412.cyou/post/first/</link>
@@ -14,6 +14,15 @@
       
       <guid>https://web.0412.cyou/post/first/</guid>
       <description>时间如白驹过隙,一去不返。当我回首过去,那些充满笑声与阳光的日子仿佛还在昨天,却又似乎离我很远很远。前几日休息时去了姐姐家，看到了与爷爷一起的合影，记忆似乎已经开始模糊了。但爷爷的在照片形象中仍然充满慈祥。从小我就在爷爷的身边长大,对爷爷的感情颇深。</description>
+    </item>
+    
+    <item>
+      <title>Brain hole是如何让建成的</title>
+      <link>https://web.0412.cyou/post/my-bokr/</link>
+      <pubDate>Thu, 13 Jul 2023 09:35:51 +0800</pubDate>
+      
+      <guid>https://web.0412.cyou/post/my-bokr/</guid>
+      <description>6月份初，我在twitter上看帖子的时候发现了hugo-paper，当时我觉得给我的感受是简约、漂亮。于是决定也搭建一个，经过在Google一番查找，发现paper使用的是hugo框架，开始用hugo的时候感觉要比hexo要难些。</description>
     </item>
     
     <item>
